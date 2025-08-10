@@ -1,0 +1,91 @@
+/* Reset some defaults */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body, h1, h2, h3, p, ul, li, table {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+a { color: inherit; text-decoration: none; }
+img, svg { max-width: 100%; height: auto; }
+
+/* Layout */
+.site-header,
+.site-footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.site-header h1 { font-size: 2.4rem; }
+.site-footer p { margin-bottom: .5rem; }
+
+/* Main content */
+.section {
+  padding: 2rem 1.5rem;
+}
+#about { background: #fff; }
+#services { background: #f1f1f1; }
+#pricing { background: #fff; }
+#contact { background: #f1f1f1; }
+
+/* Headings */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: .75rem;
+}
+
+/* Services list */
+.services-list {
+  list-style: none;
+}
+.services-list li + li { margin-top: 1rem; }
+
+/* Pricing table */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pricing-table th,
+.pricing-table td {
+  padding: .75rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.pricing-table th { background: #222; color: #fff; text-align: left; }
+
+/* Form */
+#contact-form {
+  display: grid;
+  gap: .75rem;
+}
+#contact-form label { font-weight: 600; }
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#contact-form button {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: .75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#contact-form button:hover { background: #444; }
+
+/* Responsive */
+@media (min-width: 600px) {
+  .section { padding: 3rem 2.5rem; }
+  #services ul, #pricing table { max-width: 800px; margin: auto; }
+}

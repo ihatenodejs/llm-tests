@@ -1,0 +1,212 @@
+I'll help you create a simple website for "Mike Hawk's Computer Shop" with the specified requirements. Let me outline the structure and content first.
+
+**Website Structure:**
+
+1. Home Page
+2. About Mike
+3. Services (with Windows disclaimer)
+4. Contact
+
+**Content:**
+
+1. Home Page:
+   - Welcome to Mike Hawk's Computer Shop
+   - Professional computer repair services
+   - Mac, Linux, and other non-Windows systems only
+
+2. About Mike:
+   - Brief bio
+   - Why he started the business
+   - His passion for non-Windows systems
+
+3. Services:
+   - List of repair services offered
+   - Clear statement about not repairing Windows systems
+   - Explanation of his personal distaste for Windows
+
+4. Contact:
+   - Contact form
+   - Shop location (if any)
+   - Phone number and email
+
+Let me create the basic HTML structure for this website:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Hawk's Computer Shop</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+        nav { background: #333; color: white; padding: 1rem; text-align: center; }
+        nav a { color: white; margin: 0 1rem; text-decoration: none; }
+        .container { max-width: 800px; margin: auto; padding: 2rem; }
+        h1 { color: #333; }
+        .disclaimer { background: #f8d7da; color: #721c24; padding: 1rem; margin: 2rem 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Mike</a>
+        <a href="services.html">Services</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Mike Hawk's Computer Shop</h1>
+        <p>Welcome to Mike Hawk's Computer Shop, where we specialize in professional computer repair services for Mac, Linux, and other non-Windows systems.</p>
+        <p>At Mike Hawk's Computer Shop, we take pride in providing top-quality service for non-Windows systems.</p>
+    </div>
+
+    <footer style="text-align: center; padding: 1rem; background: #f1f1f1;">
+        &copy; 2023 Mike Hawk's Computer Shop. All rights reserved.
+    </footer>
+</body>
+</html>
+```
+
+Now, let me create the content for each page:
+
+1. Home Page (index.html) - already created above
+
+2. About Mike (about.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Mike - Mike Hawk's Computer Shop</title>
+    <style>
+        /* Same styles as above */
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Mike</a>
+        <a href="services.html">Services</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>About Mike</h1>
+        <p>Mike Hawk has been working with computers since the early 90s, starting with his first Apple IIc. He developed a passion for computers that are reliable and user-friendly, which led him to specialize in Mac and Linux systems.</p>
+        <p>After years of working in various tech roles, Mike decided to open his own shop where he could focus on providing excellent service for the systems he believes in.</p>
+        <p>His personal distaste for Windows systems comes from his belief that computers should be tools that empower users, not frustrate them with constant updates and security issues.</p>
+    </div>
+
+    <footer style="text-align: center; padding: 1rem; background: #f1f1f1;">
+        &copy; 2023 Mike Hawk's Computer Shop. All rights reserved.
+    </footer>
+</body>
+</html>
+```
+
+3. Services (services.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services - Mike Hawk's Computer Shop</title>
+    <style>
+        /* Same styles as above */
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Mike</a>
+        <a href="services.html">Services</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>At Mike Hawk's Computer Shop, we offer a wide range of repair services for Mac, Linux, and other non-Windows systems:</p>
+        <ul>
+            <li>Hardware diagnostics and repair</li>
+            <li>Software installation and configuration</li>
+            <li>Data recovery services</li>
+            <li>Virus and malware removal (for non-Windows systems)</li>
+            <li>System upgrades and optimization</li>
+        </ul>
+
+        <div class="disclaimer">
+            <strong>Important Note:</strong> Due to a personal distaste for the Windows operating system and its constant security issues, Mike Hawk's Computer Shop refuses to repair computers with Windows installed. We believe in providing the best service for systems that we know and trust.
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 1rem; background: #f1f1f1;">
+        &copy; 2023 Mike Hawk's Computer Shop. All rights reserved.
+    </footer>
+</body>
+</html>
+```
+
+4. Contact (contact.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Mike Hawk's Computer Shop</title>
+    <style>
+        /* Same styles as above */
+        form { max-width: 500px; margin: auto; }
+        label { display: block; margin-bottom: 0.5rem; }
+        input, textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 4px; }
+        button { background: #333; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Mike</a>
+        <a href="services.html">Services</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or would like to schedule a repair, please use the form below:</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <h2>Our Location</h2>
+        <p>Mike Hawk's Computer Shop<br>
+        123 Tech Lane, Silicon City, CA 94016</p>
+        <p>Phone: (123) 456-7890<br>
+        Email: info@mikehawkscomputershop.com</p>
+    </div>
+
+    <footer style="text-align: center; padding: 1rem; background: #f1f1f1;">
+        &copy; 2023 Mike Hawk's Computer Shop. All rights reserved.
+    </footer>
+</body>
+</html>
+```
+
+Would you like me to:
+1. Create a simple CSS file to style these pages?
+2. Add any additional content or features?
+3. Set up a basic server configuration for this website?

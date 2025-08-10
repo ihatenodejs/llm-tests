@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mike Hawk's Computer Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1>Mike Hawk's Computer Shop</h1>
+  </header>
+
+  <!-- Main content -->
+  <main class="site-main">
+
+    <!-- About section -->
+    <section id="about" class="section">
+      <h2>About Mike</h2>
+      <p>
+        Welcome to the only computer shop that refuses to touch a machine with Windows installed.  
+        Mike Hawk has been repairing Macs, Linux boxes and classic Unix systems for over 15 years.  
+        He believes in open‑source freedom, privacy and the power of choice.
+      </p>
+    </section>
+
+    <!-- Services section -->
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <ul class="services-list">
+        <li>
+          <strong>Hardware diagnostics</strong><br>
+          Thorough check of all components – CPU, RAM, SSD/HDD, GPU, power supply.
+        </li>
+        <li>
+          <strong>OS installation & migration</strong><br>
+          Install macOS, Linux (Ubuntu, Fedora, Arch…) or BSD from scratch.
+        </li>
+        <li>
+          <strong>Repair & replacement</strong><br>
+          Replace broken parts, fix overheating, re‑flash firmware.
+        </li>
+        <li>
+          <strong>Data recovery</strong><br>
+          Retrieve files from damaged drives (no Windows data required).
+        </li>
+      </ul>
+    </section>
+
+    <!-- Pricing section -->
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+      <table class="pricing-table">
+        <thead>
+          <tr><th>Service</th><th>Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Hardware Diagnostics</td><td>$49</td></tr>
+          <tr><td>OS Installation (macOS, Linux)</td><td>$89</td></tr>
+          <tr><td>Repair & Replacement</td><td>From $99 (depends on parts)</td></tr>
+          <tr><td>Data Recovery</td><td>$149 (first 1 TB)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section">
+      <h2>Contact Mike</h2>
+      <form id="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Mike Hawk's Computer Shop. All rights reserved.</p>
+    <p>Phone: (555) 123‑4567 | Email: <a href="mailto:support@mikemc.com">support@mikemc.com</a></p>
+  </footer>
+
+  <!-- Optional JavaScript for form validation -->
+  <script src="app.js"></script>
+</body>
+</html>

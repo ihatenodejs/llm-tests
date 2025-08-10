@@ -1,0 +1,197 @@
+<|channel|>analysis<|message|>We need to create a website for Mike Hawk's Computer Shop, with the twist that Mike refuses to repair computers with Windows installed due to a personal distaste. So we should reflect that in the website content, maybe mention "We only service computers with macOS or Linux" etc. But we also might want to keep it professional. The user didn't specify format: maybe an HTML page, or just a description? Likely they want the code for a website. So we can provide HTML, CSS and maybe JavaScript. Include sections: Home, Services, About, Contact. In services mention "We repair macOS and Linux machines only". Also mention Mike's policy about Windows. Provide contact form maybe.
+
+We should also ensure that the website is accessible, responsive.
+
+Let's produce a full HTML file with embedded CSS for simplicity. Provide comments. Also include a simple script to handle form submission maybe just console log.
+
+We can also add some humor about Windows. Provide a tagline "No Windows, no problem". The site name: Mike Hawk's Computer Shop.
+
+Also mention the policy in a prominent place. Provide an FAQ about why no Windows. Also include maybe a gallery of Mac and Linux computers.
+
+Let's produce final answer: an HTML code snippet. Also maybe provide instructions to host on GitHub pages.
+
+Ok.<|end|>
+
+<|start|>assistant<|channel|>final<|message|>Below is a **complete, ready‑to‑publish** website for **Mike Hawk’s Computer Shop**.  
+It is written in plain HTML5 + CSS (and a tiny bit of vanilla JavaScript for the contact form).  
+Everything is in one file so you can drop it into a folder, rename to `index.html`, and open it in a browser – or upload it straight to GitHub Pages, Netlify, Vercel, etc.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mike Hawk's Computer Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ------------- Google Fonts (optional) -------------- -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+/* ------------------------------------------------------
+   Basic Reset & Typography
+------------------------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color:#333;
+}
+a { text-decoration:none; color:#0066cc; }
+a:hover { text-decoration:underline; }
+
+/* ------------------------------------------------------
+   Layout
+------------------------------------------------------ */
+header, footer { background:#222; color:#fff; }
+header { padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center;}
+header h1 { margin:0; font-size:1.8rem; }
+nav a { margin-left:1rem; color:#fff; font-weight:600;}
+main { padding:2rem 1.5rem; max-width:900px; margin:auto;}
+section { margin-bottom:3rem; }
+.section-title { font-size:1.8rem; margin-bottom:.75rem; border-bottom:2px solid #0066cc; padding-bottom:.25rem;}
+img { max-width:100%; height:auto; }
+
+/* ------------------------------------------------------
+   Buttons
+------------------------------------------------------ */
+.btn {
+    display:inline-block;
+    padding:.6rem 1.2rem;
+    background:#0066cc;
+    color:#fff;
+    border-radius:4px;
+    transition:.2s background;
+}
+.btn:hover { background:#005bb5; }
+
+/* ------------------------------------------------------
+   Form
+------------------------------------------------------ */
+form label { display:block; margin-top:.5rem;}
+form input, form textarea {
+    width:100%;
+    padding:.6rem;
+    margin-top:.25rem;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+form textarea { resize:none; }
+form button {
+    margin-top:.75rem;
+}
+
+/* ------------------------------------------------------
+   Responsive
+------------------------------------------------------ */
+@media (min-width: 600px) {
+    main { padding:3rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mike Hawk's Computer Shop</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main id="home">
+    <section>
+        <h2 class="section-title">Welcome to Mike Hawk's Computer Shop</h2>
+        <p>We specialize in repairing <strong>macOS</strong> and <strong>Linux</strong> machines. If your computer runs Windows, we politely decline – Mike’s personal distaste for the OS is a non‑compromise policy.</p>
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fdca7e?auto=format&fit=crop&w=800&q=80" alt="Mac and Linux computers">
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Services</h2>
+        <ul>
+            <li><strong>Hardware Diagnostics & Repair</strong> – SSD upgrades, RAM swaps, motherboard fixes.</li>
+            <li><strong>Operating System Support</strong> – macOS installation, Linux distro upgrades.</li>
+            <li><strong>Data Recovery</strong> – From encrypted drives to corrupted partitions.</li>
+            <li><strong>Custom Builds</strong> – Tailored workstations for developers, designers, and gamers.</li>
+        </ul>
+
+        <h3>Why No Windows?</h3>
+        <p>Mike’s experience taught him that the Windows ecosystem is often riddled with bloat, frequent updates that break drivers, and a general lack of developer friendliness. If you’re looking for reliable, secure computing, macOS or Linux is the way to go.</p>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Mike</h2>
+        <p>Mike Hawk is a self‑taught computer technician with 15+ years of hands‑on experience. He’s built, repaired, and optimized dozens of systems for hobbyists, professionals, and small businesses. Mike’s mantra: “Quality over convenience.”</p>
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Mike working on a computer">
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer style="text-align:center; padding:1rem;">
+    <p>&copy; 2025 Mike Hawk's Computer Shop | All Rights Reserved</p>
+</footer>
+
+<script>
+// Simple form handling – replace with real backend logic
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const msg = document.getElementById('message').value;
+
+    console.log(`New message from ${name} (${email}):\n${msg}`);
+    alert('Thank you! Your message has been sent (demo).');
+    e.target.reset();
+});
+</script>
+</body>
+</html>
+```
+
+### How to use
+
+1. **Copy** the entire code block into a new file called `index.html`.
+2. **Open** that file in your browser – you’ll see the full site.
+3. **Deploy**  
+   * GitHub Pages: push to a repository named `yourusername.github.io`.  
+   * Netlify/Vercel: drag the file into the “drag & drop” area.  
+   * Your own server: upload `index.html` to the web root.
+
+### Customization tips
+
+| What you might want to change | Where |
+|------------------------------|-------|
+| Logo or shop name            | `<h1>` inside `<header>` |
+| Color scheme                 | Edit the CSS variables in `<style>` (e.g., `#0066cc` for links & buttons) |
+| Images                        | Replace the Unsplash URLs with your own photos or local images. |
+| Contact form backend         | In the `<script>` section, replace `console.log` and `alert` with an AJAX call to your server or a service like Formspree. |
+| Additional pages             | Add new `<section id="…">` blocks and corresponding navigation links. |
+
+> **Pro tip** – If you want to keep the “No Windows” policy front‑and‑center, add a small banner or badge on every page:
+
+```html
+<div style="background:#ff4444;color:white;padding:0.5rem;text-align:center;">
+    ⚠️ We do NOT repair computers with Windows installed. ⚠️
+</div>
+```
+
+Feel free to tweak the wording or style until it matches Mike’s personality. Happy building!

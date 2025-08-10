@@ -1,0 +1,670 @@
+<|channel|>analysis<|message|>We need to create a website for "Mike Hawk's Computer Shop" with the detail that Mike refuses to repair computers with Windows installed, due to a personal distaste. The user is asking us to "Create a website for 'Mike Hawk's Computer Shop.'" We need to produce HTML/CSS (and maybe JavaScript) code for a website. The site likely includes a homepage, about page, services page (including the Windows refusal), contact page. The user might want a simple website design with some placeholder content, but must include the specific detail that Mike refuses to repair Windows computers. Also we might want to incorporate a tagline or note about the policy. Possibly we could add some humor, but maintain professionalism.
+
+We need to output a complete website code that can be used as static files. We could create index.html, about.html, services.html, contact.html. Or we can embed all content in a single file using sections or navigation. But better to produce multiple files for clarity.
+
+The user might want a responsive design with CSS, maybe using Bootstrap. But we could write custom CSS.
+
+We should also include a note about Windows refusal, maybe in the services page. Possibly mention that they only repair macOS and Linux computers. Also could mention a policy statement on the homepage.
+
+We should also incorporate contact form or at least phone number and email.
+
+Also maybe add a small style: color scheme, fonts. We can use some simple CSS. Might also include images placeholders.
+
+We might want to create a folder structure: index.html, about.html, services.html, contact.html, css/style.css, images/... But we can't actually create files; but we can provide code for each file.
+
+Thus the answer should contain:
+
+- index.html
+- about.html
+- services.html
+- contact.html
+- css/style.css
+
+Also maybe mention that the images folder contains placeholder images.
+
+We should also note the Windows refusal policy. We need to include it prominently, maybe in a banner.
+
+We should also incorporate navigation with links to all pages.
+
+Also we might want a small script for form submission (maybe just placeholder). But not necessary.
+
+We need to think about the best approach: Provide code blocks for each file. The user can copy-paste into files.
+
+Also we should include meta tags, title.
+
+We need to ensure the code is valid HTML5. Use semantic elements like <header>, <nav>, <main>, <footer>.
+
+Also include a style that sets colors: maybe dark background, light text. For example, use #2c3e50 for header, #ecf0f1 for body. Or something else.
+
+Also we can incorporate icons or logos: maybe use a placeholder text "Mike Hawk's Computer Shop".
+
+We should also include a small disclaimer or statement: "We do not repair computers with Windows installed."
+
+Also maybe mention "We specialize in macOS and Linux repairs." And perhaps a small FAQ.
+
+Ok, let's draft the code. We'll produce index.html with header and navigation, main content with hero section, about snippet, services preview, contact preview. We'll link to other pages.
+
+We'll include a banner or notice: "Note: We do not repair computers with Windows installed."
+
+Let's produce the CSS. Use a simple responsive design: media queries for small screens.
+
+Also include minimal JavaScript if needed, but likely not necessary.
+
+Ok, let's produce the code:
+
+- index.html: includes navigation to about.html, services.html, contact.html. Use <a href="about.html">About</a> etc.
+
+- about.html: includes detailed info about Mike, his background, mission. Also mention the Windows refusal.
+
+- services.html: list of services: hardware repair, software installation (macOS/Linux), troubleshooting, upgrades. And note that Windows computers are not accepted.
+
+- contact.html: includes contact form with name, email, message. Use method="post" action="#" (just placeholder). Also include phone and email.
+
+- style.css: set base styles, header background color, navigation layout, responsive adjustments. Use simple typography.
+
+We also need to mention "Mike refuses to repair computers with Windows installed, due to a personal distaste." So we must include that in the text.
+
+Also maybe mention "If you need Windows repairs, please contact another shop." or something like that.
+
+Ok, let's write the code. Use <meta charset="utf-8"> etc.
+
+Add a favicon? Not necessary.
+
+We might want to mention the website uses "Roboto" or similar fonts. But we can keep it simple.
+
+Ok, let's start writing the code for index.html:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mike Hawk's Computer Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Mike Hawk's Computer Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Reliable Repairs for macOS & Linux</h2>
+      <p>We specialize in troubleshooting, hardware upgrades, and software solutions for Apple and Linux systems. Windows computers are not serviced.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <h3>Why Choose Us?</h3>
+    <p>Mike Hawk has over 15 years of experience in computer repair and support. We provide fast, affordable, and honest service with a personal touch.</p>
+    <h3>Services Preview</h3>
+    <ul class="services-list">
+      <li>Hardware diagnostics & repair</li>
+      <li>macOS & Linux software installation</li>
+      <li>System optimization & clean-up</li>
+    </ul>
+    <p><a href="services.html" class="btn">View All Services</a></p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mike Hawk's Computer Shop. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+```
+
+Add the CSS accordingly.
+
+Ok, next about.html:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Mike Hawk's Computer Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+...
+```
+
+Then include Mike's background, mention Windows refusal. Provide a small quote.
+
+Next services.html: list of services and detail about Windows refusal:
+
+```
+<h1>Our Services</h1>
+<p>At Mike Hawk's Computer Shop, we offer a full range of repair and support services for macOS and Linux computers. Please note: We do not repair or service computers that have Windows installed due to personal policy.</p>
+...
+```
+
+Add list of services, each with description.
+
+Next contact.html: include a simple form. Add phone and email details.
+
+Also we might want to add some placeholder images? We can mention "images/hero.jpg" etc.
+
+Ok, let's produce the CSS. Use a minimal design:
+
+- Body: background color #f9f9f9, font-family sans-serif.
+
+- Header: background color #2c3e50, color #ecf0f1.
+
+- Navigation: horizontal list.
+
+- .hero: background image or color.
+
+- Buttons: style.
+
+- Footer: small text.
+
+Add responsive styles for mobile. Use @media (max-width: 600px) to stack nav items vertically.
+
+Ok, let's produce the CSS:
+
+```
+/* style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+header h1 {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 1.8rem;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  margin-left: 20px;
+}
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px 0;
+}
+nav a:hover {
+  border-bottom: 2px solid #ecf0f1;
+}
+.hero {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 60px 0;
+}
+.hero h2 {
+  margin-top: 0;
+}
+main {
+  padding: 40px 0;
+}
+.services-list {
+  list-style: disc inside;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: #fff;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #1f639b;
+}
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px 0;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+```
+
+Also maybe add more styling for forms.
+
+Ok, contact form:
+
+```
+<form action="#" method="post" class="contact-form">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+  ...
+```
+
+Add CSS for form.
+
+Ok, let's produce the code. Provide all files in separate sections. Use triple backticks with language annotation for each file.
+
+Also we should mention the policy: "We do not repair Windows computers due to personal distaste." It could be included in about page, services page.
+
+Ok, let's produce the final answer.<|end|>
+
+<|start|>assistant<|channel|>final<|message|>Below is a complete, ready‑to‑drop static website for **Mike Hawk’s Computer Shop**.  
+It consists of four HTML pages, a single CSS file and a tiny folder structure you can copy into your project directory.
+
+```
+/MikeHawkComputerShop
+│
+├── index.html
+├── about.html
+├── services.html
+├── contact.html
+│
+└── css/
+    └── style.css
+```
+
+> **Important Note** – The text “We do not repair computers with Windows installed” appears on the Home, About and Services pages as requested.
+
+---
+
+## 1️⃣ `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mike Hawk's Computer Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Mike Hawk's Computer Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Reliable Repairs for macOS & Linux</h2>
+    <p>We specialize in troubleshooting, hardware upgrades and software solutions for Apple & Linux systems.  
+    <strong>Windows computers are not serviced.</strong></p>
+  </div>
+</section>
+
+<main class="container">
+  <h3>Why Choose Us?</h3>
+  <p>Mike Hawk has over 15 years of hands‑on experience in computer repair and support. We offer fast, affordable, honest service with a personal touch.</p>
+
+  <h3>Services Snapshot</h3>
+  <ul class="services-list">
+    <li>Hardware diagnostics & repair</li>
+    <li>macOS & Linux software installation</li>
+    <li>System optimization & clean‑up</li>
+  </ul>
+
+  <p><a href="services.html" class="btn">View All Services</a></p>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Mike Hawk's Computer Shop. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+## 2️⃣ `about.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About – Mike Hawk's Computer Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Mike Hawk's Computer Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>About Mike Hawk</h2>
+  <p>Mike grew up tinkering with computers in his parents’ garage. After earning a degree in Computer Science, he opened his own shop to provide honest and affordable repair services for the community.  
+  Mike’s specialty? Apple & Linux machines – he refuses to work on any computer that has Windows installed, because “Windows just doesn’t fit the vibe.”</p>
+
+  <h3>Our Mission</h3>
+  <ul class="services-list">
+    <li>Fast, transparent repairs</li>
+    <li>High‑quality parts and tools</li>
+    <li>Education: teach customers how to keep their systems healthy</li>
+  </ul>
+
+  <p>Looking for a reliable partner who respects your operating system? Mike’s got you covered.</p>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Mike Hawk's Computer Shop. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+## 3️⃣ `services.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services – Mike Hawk's Computer Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Mike Hawk's Computer Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>What We Do</h2>
+  <p>We provide comprehensive support for macOS and Linux computers. If you’re using Windows, we recommend contacting a different shop – Mike simply does not repair Windows machines.</p>
+
+  <section class="service">
+    <h3>Hardware Diagnostics & Repair</h3>
+    <p>From failing hard drives to overheating CPUs, we diagnose and fix hardware issues quickly.</p>
+  </section>
+
+  <section class="service">
+    <h3>Software Installation & Upgrade</h3>
+    <p>Need the latest macOS or Linux distro? We install, configure and optimize for you.</p>
+  </section>
+
+  <section class="service">
+    <h3>System Optimization</h3>
+    <p>Speed up your machine, clean junk files, and tweak settings for peak performance.</p>
+  </section>
+
+  <section class="service">
+    <h3>Data Recovery</h3>
+    <p>Accidentally deleted files? We’ll try to recover them using industry‑grade tools.</p>
+  </section>
+
+  <h3>Consultation & Advice</h3>
+  <p>Want to know how to keep your system healthy? We offer one‑on‑one guidance and support.</p>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Mike Hawk's Computer Shop. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+## 4️⃣ `contact.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Mike Hawk's Computer Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Mike Hawk's Computer Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Get In Touch</h2>
+  <p>Drop us a line, give us a call or schedule an appointment. We’re here to help with all your macOS & Linux needs.</p>
+
+  <form action="#" method="post" class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <h3>Contact Details</h3>
+  <p><strong>Phone:</strong> (555) 123‑4567</p>
+  <p><strong>Email:</strong> <a href="mailto:info@mikhawk.com">info@mikhawk.com</a></p>
+  <p><strong>Address:</strong> 123 Tech Lane, Silicon Valley, CA</p>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Mike Hawk's Computer Shop. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+## 5️⃣ `css/style.css`
+
+```css
+/* ---------- General Layout ---------- */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------- Header & Navigation ---------- */
+header {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+header h1 {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 1.8rem;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav li {
+  margin-left: 20px;
+}
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px 0;
+}
+nav a:hover,
+nav a.active {
+  border-bottom: 2px solid #ecf0f1;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 60px 0;
+}
+.hero h2 {
+  margin-top: 0;
+}
+
+/* ---------- Main Content ---------- */
+main {
+  padding: 40px 0;
+}
+.services-list {
+  list-style: disc inside;
+  margin-left: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: #fff;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #1f639b;
+}
+
+/* ---------- Contact Form ---------- */
+.contact-form {
+  display: grid;
+  gap: 15px;
+}
+.contact-form label {
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.contact-form button {
+  width: auto;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+```
+
+---
+
+### How to Deploy
+
+1. **Create the folder structure** as shown above.
+2. **Copy each code block into its corresponding file** (`index.html`, `about.html`, etc.).
+3. **Open `index.html` in a browser** to see the live site.
+4. (Optional) Add images or tweak colors/fonts in `style.css` to match your branding.
+
+---
+
+**Enjoy building and selling repairs for macOS & Linux – while staying true to Mike’s personal policy!**

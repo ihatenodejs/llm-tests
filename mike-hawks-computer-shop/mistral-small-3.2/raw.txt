@@ -1,0 +1,134 @@
+Here's a simple HTML template for "Mike Hawk's Computer Shop" website, incorporating Mike's preference for non-Windows systems:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Hawk's Computer Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #e8491d;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 2rem 0;
+        }
+        .policy-box {
+            background: #fff;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-left: 4px solid #e8491d;
+        }
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mike Hawk's Computer Shop</h1>
+        <p>Quality repairs for non-Windows systems</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#policy">Policy</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>At Mike Hawk's Computer Shop, we specialize in repairing and maintaining computers running:</p>
+            <ul>
+                <li>Linux distributions (Ubuntu, Fedora, Debian, etc.)</li>
+                <li>macOS systems</li>
+                <li>Chrome OS devices</li>
+                <li>BSD variants</li>
+            </ul>
+            <p>Our expert technicians can handle:</p>
+            <ul>
+                <li>Hardware repairs and upgrades</li>
+                <li>Software troubleshooting</li>
+                <li>System optimization</li>
+                <li>Data recovery (when possible)</li>
+            </ul>
+        </section>
+
+        <div class="policy-box" id="policy">
+            <h2>Important Policy Notice</h2>
+            <p><strong>Mike Hawk's Computer Shop does not repair computers with Windows installed.</strong></p>
+            <p>This policy is based on Mike's personal distaste for Windows systems and his commitment to supporting open-source and alternative operating systems.</p>
+            <p>We believe in providing the best service for systems we know and love, which is why we've chosen to specialize in non-Windows platforms.</p>
+        </div>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Location: 123 Tech Street, Silicon Valley, CA</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: contact@mikehawkscomputershop.com</p>
+            <p>Business Hours: Monday-Friday 9AM-6PM, Saturday 10AM-2PM</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mike Hawk's Computer Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+```
+
+This website includes:
+1. A clear header with the shop's name and specialization
+2. Navigation menu linking to different sections
+3. Services section listing the supported operating systems and repair services
+4. A prominent policy box explaining Mike's stance on Windows systems
+5. Contact information section
+6. Simple, clean styling that works well on different devices
+
+You can customize this further by:
+- Adding more specific service details
+- Including images of the shop or staff
+- Adding a testimonials section
+- Implementing an online appointment system
+- Creating separate pages for each service

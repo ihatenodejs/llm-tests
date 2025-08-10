@@ -1,0 +1,186 @@
+<think>
+Okay, the user wants me to create a website for Mike Hawk's Computer Shop. The key point is that Mike refuses to repair computers with Windows installed because of a personal distaste. Let me start by brainstorming the structure and content.
+
+First, the homepage needs a welcoming message that highlights Mike's stance. Maybe a bold headline to grab attention. Then, sections explaining why he doesn't repair Windows computers. I should make it clear but not offensive. Maybe add a bit of humor to keep it light, since personal distaste can come off as strong.
+
+Next, services offered. He probably does repairs for other OS like macOS or Linux. Need to list those services, maybe with icons for visual appeal. Also, include other services like hardware upgrades or custom builds to show variety.
+
+Testimonials would help build credibility. Maybe include quotes from customers who appreciate his no-nonsense approach. A FAQ section can address common questions, like why Windows is excluded and what alternatives he offers.
+
+Contact info is essential. Form for inquiries, phone number, email, maybe social media links. Also, a footer with links to privacy policy and terms of service.
+
+Design-wise, the user might want it clean and professional. Maybe a dark theme with neon accents to give a techy vibe. Use some icons for services and ensure the site is responsive.
+
+Wait, need to make sure the tone isn't too confrontational. Mike's distaste is personal, so phrasing it as a preference rather than a judgment. Maybe add something about respecting customer choices but sticking to his expertise.
+
+Also, include a note that he's open to discussing alternatives or recommendations for Windows users. That way, it's not a hard no but a clear boundary.
+
+Check if there are any legal considerations. Refusing service based on OS might have implications, but since it's a small shop, probably okay as long as it's clearly stated.
+
+Alright, putting it all together with HTML and CSS. Make sure the code is clean, uses semantic tags, and is easy to customize later. Maybe add some JavaScript for the contact form if needed, but keep it simple.
+</think>
+
+
+
+Here's a simple website design for **Mike Hawk's Computer Shop**, with a clear emphasis on Mike's stance against repairing Windows computers:
+
+---
+
+### **HTML + CSS Code**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike Hawk's Computer Shop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c2c2c;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ff4757;
+        }
+        nav {
+            background-color: #1c1c1c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ff4757;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #ff4757;
+            border-bottom: 2px solid #ff4757;
+            padding-bottom: 10px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            background-color: #2c2c2c;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 0 10px #000;
+        }
+        .service-card h3 {
+            color: #ff4757;
+        }
+        footer {
+            background-color: #1c1c1c;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        .highlight {
+            color: #ff4757;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mike Hawk's Computer Shop</h1>
+        <p>The place where your computer gets a second life (without Windows).</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2>About Mike Hawk's Computer Shop</h2>
+            <p>At Mike Hawk's Computer Shop, we specialize in reviving computers with operating systems that don't leave us <em>breathing</em> through our nose. While we respect the choices of others, Mike has a <strong>personal distaste</strong> for Windows and refuses to repair devices with it installed. Think of us as the <em>nerdy</em> alternative to the mainstream!</p>
+            <p>We focus on macOS, Linux, and other open-source solutions — because sometimes, less bloat means more power.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section" id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Hardware Repairs</h3>
+                    <p>From broken keyboards to fried motherboards, we fix it all — as long as it's not running Windows.</p>
+                </div>
+                <div class="service-card">
+                    <h3>OS Installation</h3>
+                    <p>We install macOS, Linux, or other lightweight OSes to give your machine a fresh start.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Upgrades & Custom Builds</h3>
+                    <p>Want to future-proof your rig? We’ll help you build or upgrade it with the latest tech.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <p><strong>Q: Why won't you repair Windows computers?</strong></p>
+                <p>A: It's a personal distaste, not a judgment. We prefer working with systems that don't require us to <em>fight</em> every day.</p>
+                <p><strong>Q: What if my computer runs Windows?</strong></p>
+                <p>A: We can still help! We'll guide you on how to switch to macOS or Linux, or refer you to other shops.</p>
+                <p><strong>Q: Are your services affordable?</strong></p>
+                <p>A: We price fairly — no hidden fees, no bloatware. Just clear costs and happy customers.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need help? Reach out!</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:mike@hawkcomputers.com">mike@hawkcomputers.com</a></li>
+                <li><strong>Phone:</strong> (555) 123-4567</li>
+                <li><strong>Address:</strong> 123 Tech Lane, San Francisco, CA</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mike Hawk's Computer Shop. No Windows, no problem.</p>
+    </footer>
+</body>
+</html>
+```
+
+---
+
+### **Key Features**
+1. **Clear Messaging**: Emphasizes Mike's refusal to repair Windows computers with a humorous yet respectful tone.
+2. **Services Highlight**: Focuses on macOS/Linux repairs, upgrades, and custom builds.
+3. **FAQ Section**: Addresses potential customer concerns upfront.
+4. **Modern Design**: Dark theme with neon accents for a techy, minimalist aesthetic.
+
+You can host this code on platforms like GitHub Pages, Netlify, or any web hosting service. Let me know if you want to add a contact form or integrate a CMS! 🛠️💻

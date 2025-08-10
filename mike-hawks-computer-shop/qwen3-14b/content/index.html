@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike Hawk's Computer Shop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c2c2c;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #ff4757;
+        }
+        nav {
+            background-color: #1c1c1c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ff4757;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #ff4757;
+            border-bottom: 2px solid #ff4757;
+            padding-bottom: 10px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            background-color: #2c2c2c;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 0 10px #000;
+        }
+        .service-card h3 {
+            color: #ff4757;
+        }
+        footer {
+            background-color: #1c1c1c;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        .highlight {
+            color: #ff4757;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mike Hawk's Computer Shop</h1>
+        <p>The place where your computer gets a second life (without Windows).</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2>About Mike Hawk's Computer Shop</h2>
+            <p>At Mike Hawk's Computer Shop, we specialize in reviving computers with operating systems that don't leave us <em>breathing</em> through our nose. While we respect the choices of others, Mike has a <strong>personal distaste</strong> for Windows and refuses to repair devices with it installed. Think of us as the <em>nerdy</em> alternative to the mainstream!</p>
+            <p>We focus on macOS, Linux, and other open-source solutions — because sometimes, less bloat means more power.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section" id="services">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Hardware Repairs</h3>
+                    <p>From broken keyboards to fried motherboards, we fix it all — as long as it's not running Windows.</p>
+                </div>
+                <div class="service-card">
+                    <h3>OS Installation</h3>
+                    <p>We install macOS, Linux, or other lightweight OSes to give your machine a fresh start.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Upgrades & Custom Builds</h3>
+                    <p>Want to future-proof your rig? We’ll help you build or upgrade it with the latest tech.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <p><strong>Q: Why won't you repair Windows computers?</strong></p>
+                <p>A: It's a personal distaste, not a judgment. We prefer working with systems that don't require us to <em>fight</em> every day.</p>
+                <p><strong>Q: What if my computer runs Windows?</strong></p>
+                <p>A: We can still help! We'll guide you on how to switch to macOS or Linux, or refer you to other shops.</p>
+                <p><strong>Q: Are your services affordable?</strong></p>
+                <p>A: We price fairly — no hidden fees, no bloatware. Just clear costs and happy customers.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need help? Reach out!</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:mike@hawkcomputers.com">mike@hawkcomputers.com</a></li>
+                <li><strong>Phone:</strong> (555) 123-4567</li>
+                <li><strong>Address:</strong> 123 Tech Lane, San Francisco, CA</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mike Hawk's Computer Shop. No Windows, no problem.</p>
+    </footer>
+</body>
+</html>

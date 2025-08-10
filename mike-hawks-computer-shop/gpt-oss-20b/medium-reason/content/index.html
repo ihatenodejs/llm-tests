@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mike Hawk's Computer Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ------------- Google Fonts (optional) -------------- -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+/* ------------------------------------------------------
+   Basic Reset & Typography
+------------------------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color:#333;
+}
+a { text-decoration:none; color:#0066cc; }
+a:hover { text-decoration:underline; }
+
+/* ------------------------------------------------------
+   Layout
+------------------------------------------------------ */
+header, footer { background:#222; color:#fff; }
+header { padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center;}
+header h1 { margin:0; font-size:1.8rem; }
+nav a { margin-left:1rem; color:#fff; font-weight:600;}
+main { padding:2rem 1.5rem; max-width:900px; margin:auto;}
+section { margin-bottom:3rem; }
+.section-title { font-size:1.8rem; margin-bottom:.75rem; border-bottom:2px solid #0066cc; padding-bottom:.25rem;}
+img { max-width:100%; height:auto; }
+
+/* ------------------------------------------------------
+   Buttons
+------------------------------------------------------ */
+.btn {
+    display:inline-block;
+    padding:.6rem 1.2rem;
+    background:#0066cc;
+    color:#fff;
+    border-radius:4px;
+    transition:.2s background;
+}
+.btn:hover { background:#005bb5; }
+
+/* ------------------------------------------------------
+   Form
+------------------------------------------------------ */
+form label { display:block; margin-top:.5rem;}
+form input, form textarea {
+    width:100%;
+    padding:.6rem;
+    margin-top:.25rem;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+form textarea { resize:none; }
+form button {
+    margin-top:.75rem;
+}
+
+/* ------------------------------------------------------
+   Responsive
+------------------------------------------------------ */
+@media (min-width: 600px) {
+    main { padding:3rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Mike Hawk's Computer Shop</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main id="home">
+    <section>
+        <h2 class="section-title">Welcome to Mike Hawk's Computer Shop</h2>
+        <p>We specialize in repairing <strong>macOS</strong> and <strong>Linux</strong> machines. If your computer runs Windows, we politely decline – Mike’s personal distaste for the OS is a non‑compromise policy.</p>
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fdca7e?auto=format&fit=crop&w=800&q=80" alt="Mac and Linux computers">
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Services</h2>
+        <ul>
+            <li><strong>Hardware Diagnostics & Repair</strong> – SSD upgrades, RAM swaps, motherboard fixes.</li>
+            <li><strong>Operating System Support</strong> – macOS installation, Linux distro upgrades.</li>
+            <li><strong>Data Recovery</strong> – From encrypted drives to corrupted partitions.</li>
+            <li><strong>Custom Builds</strong> – Tailored workstations for developers, designers, and gamers.</li>
+        </ul>
+
+        <h3>Why No Windows?</h3>
+        <p>Mike’s experience taught him that the Windows ecosystem is often riddled with bloat, frequent updates that break drivers, and a general lack of developer friendliness. If you’re looking for reliable, secure computing, macOS or Linux is the way to go.</p>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Mike</h2>
+        <p>Mike Hawk is a self‑taught computer technician with 15+ years of hands‑on experience. He’s built, repaired, and optimized dozens of systems for hobbyists, professionals, and small businesses. Mike’s mantra: “Quality over convenience.”</p>
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Mike working on a computer">
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer style="text-align:center; padding:1rem;">
+    <p>&copy; 2025 Mike Hawk's Computer Shop | All Rights Reserved</p>
+</footer>
+
+<script>
+// Simple form handling – replace with real backend logic
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const msg = document.getElementById('message').value;
+
+    console.log(`New message from ${name} (${email}):\n${msg}`);
+    alert('Thank you! Your message has been sent (demo).');
+    e.target.reset();
+});
+</script>
+</body>
+</html>
